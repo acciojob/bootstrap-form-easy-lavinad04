@@ -21,7 +21,7 @@
   <div class="col-md-4">
     <label for="first-name-input" class="form-label">First name</label>
     <input type="text" class="form-control is-invalid" id="first-name-input" aria-describedby="first-name-inputFeedback" required>
-    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+    <div id="first-name-inputFeedback" class="invalid-feedback">
       First name required!
     </div>
   </div>
@@ -31,7 +31,7 @@
   <div class="col-md-4">
     <label for="last-name-input" class="form-label">Last name</label>
     <input type="text" class="form-control is-invalid" id="last-name-input" aria-describedby="last-name-inputFeedback" required>
-    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+    <div id="last-name-inputFeedback" class="invalid-feedback">
       Last name required!
     </div>
   </div>
@@ -40,10 +40,10 @@
 		
   <div class="col-md-4">
     <label for="email-input" class="form-label">Email Address</label>
-    <div class="input-group has-validation">
-      <span class="input-group-text" id="inputGroupPrepend3">@</span>
-      <input type="email" placeholder="xyz@abc.com" class="form-control is-invalid" id="email-input" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-      <div id="validationServerUsernameFeedback" class="invalid-feedback">
+    <div class="email-input has-validation">
+      <span class="email-input-text" id="email-inputPrepend3">@</span>
+      <input type="email" placeholder="xyz@abc.com" class="form-control is-invalid" id="email-input" aria-describedby="email-inputPrepend3 email-inputFeedback" required>
+      <div id="email-inputFeedback" class="invalid-feedback">
         Email required!
       </div>
     </div>
@@ -86,11 +86,11 @@
 
 		
   <div class="col-12">
-      <input class="conditions-checkbox-input is-invalid" type="checkbox" value="" id="conditions-checkbox" aria-describedby="invalidCheck3Feedback" required>
+      <input class="conditions-checkbox-input is-invalid" type="checkbox" value="" id="conditions-checkbox" aria-describedby="conditions-checkboxFeedback" required>
       <label class="conditions-checkbox-label" for="conditions-checkbox">
         Agree to terms and conditions
       </label>
-      <div id="invalidCheck3Feedback" class="invalid-feedback">
+      <div id="conditions-checkboxFeedback" class="invalid-feedback">
         You must agree before submitting.
       </div>
   </div>
